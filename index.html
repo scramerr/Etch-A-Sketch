@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    
+    <div class="title">ETCH-A-SKETCH</div>
+    
+    
+    <div class="main-container">
+
+
+        <div class="tools-section">
+            
+            
+            <div class="input-size-div">
+                <div class="range-selector-box">
+                    <label class="sizeLabel" for="size-input">Grid Size</label>
+                    <div class="slider-div">
+                        <input class="slider" type="range" min="1" max="64" id="size-input"value="16"class="size-input">
+                    </div>
+                    <div class="size-value">16 x 16</div>
+                </div>
+                
+            </div>
+
+            <div>
+
+                <input type="button" class="grid-create-button" id="grid-create-button" value="Create New">
+    
+            </div>
+    
+            <div class="clear-grid">
+
+                <button class="grid-clear-button" onclick="clearGrid()" >Clear Grid</button>
+
+            </div>
+
+
+            <div class="modes-selection">
+                Select Mode
+
+                <div class="mode-buttons-div">
+                    
+                    <label style="margin-right: 40px;" for="normal-btn">default</label>
+                    <input class="normal-btn" id="normal-btn" type="radio"> <br>
+                    <label style="margin-right: 25px;" for="radio-btn-1">rainbow</label>
+                    <input class="radio-btn" id="radio-btn-1" type="radio"> <br>
+
+                    <!-- <label for="radio-btn-2">darkening</label>
+                    <input style="margin-left: 10px;" class="radio-btn" id="radio-btn-2" type="radio"> -->
+
+                </div>
+            
+            </div>
+
+        </div>
+
+
+        <div class="grid-container" id="grid-container">
+
+        </div>
+
+    </div>
+  
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+
+
+</html>
